@@ -14,12 +14,6 @@ body {
     padding: 0;
 }
 
-.container projects {
-    max-width: 960px;
-    margin: 10px;
-    padding: 0 20px;
-}
-
 .image {
     margin: 50px;
     padding: 0 20px;
@@ -77,7 +71,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:hover::after {
-    width 100%;
+    width: 100%;
 }
 
 nav ul li a[aria-current="page"] {
@@ -135,19 +129,46 @@ nav ul li a[aria-current="page"]::after {
     max-width: 960px;
     margin: 40px auto;
     padding: 20px;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
 }
 
 #projects .projects-image {
-    flex: 0 0 250px;
     text-align: center
 }
 
 #projects .projects-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #3498db;
+}
+
+#contact .contact-info {
+    text-align: center;
+}
+
+#footer p {
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    #projects .projects-image {
+        flex: 0 0 120px;
+    }
+
+    #projects .projects-container {
+        gap: 20px;
+    }
 }
