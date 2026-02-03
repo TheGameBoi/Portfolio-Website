@@ -8,7 +8,7 @@
     <title>{% block title %}GameBoi - Base{% endblock %}</title>
 </head>
 <body>
-    <header>
+    <header class="nav-header">
         <a href="" class="logo-link">
             <h1>GameBoi</h1>
         </a>
@@ -20,6 +20,20 @@
             </ul>
         </nav>
     </header>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h3>GameBoi</h3>
+                <p>I am a Python developer focusing on <strong>Front-End Development</strong> using Django.</p>
+            </div>
+
+            <figure class="about-image">
+                <img src="{% static 'images/logo.png' %}" alt="GameBoi, Python Developer">
+            </figure>
+        </div>
+    </section>
+
     <main class="container">
         {% block content %}
         {% endblock %}

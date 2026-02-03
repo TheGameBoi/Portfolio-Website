@@ -1,26 +1,21 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home - GameBoi{% endblock %}
 
 {% block content %}
-<section id="about">
-    <h2>GameBoi</h2>
-    <p>I am a Python developer focusing on <strong>Front-End Development</strong> using Django.</p>
-    <figure>
-        <img class="image" src="./static/images/logo.png" alt="GameBoi, Python Developer">
-    </figure>
-</section>
-
-<hr>
-
 <section id="projects">
-    <h2>Projects</h2>
-    <article>
-        <h3>Project One:</h3>
-        <img src="" alt="Scrappy logo.">
-        <p>My first application, Scrappy, made with Python and PyQt6.</p>
-        <a href="https://github.com/TheGameBoi/Scrappy" target="_blank">View Project</a>
-    </article>
+    <div class="projects-container">
+        <div class="projects-text">
+            <h2>Projects</h2>
+            <h3>Project One:</h3>
+            <p>My first application, Scrappy, made with Python and PyQt6.</p>
+            <a href="https://github.com/TheGameBoi/Scrappy" target="_blank">View Project</a>
+        </div>
+        <figure class="projects-image">
+            <img src="{% static 'images/projectone.png' %}" alt="Scrappy logo.">
+        </figure>
+    </div>
 </section>
 
 <hr>
